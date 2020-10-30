@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <img src="static/example.png" alt="">
+    <!-- {% for user in users %}
+    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+    {% endfor %} -->
+    <img src="{{url_for('static', filename='static/example.png')}}">
+    This is my Homepage
+    <p>
+        I have made this Homepage using flask
+    </p>
+    <p>
+        Thank you for visiting my website.
+    </p>
+    
+</body>
+</html>
